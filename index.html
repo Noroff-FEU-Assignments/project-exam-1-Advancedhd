@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Homepage" content="Homepage of the site">
+    <meta name="Homepage" content="The homepage on the site">
     <meta name="viewport" content="width=width=device-width , initial-scale=1.0">
     <link href="css/styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/698b6da628.js" crossorigin="anonymous"></script>
-    <title>Home</title>
+    <title>Homepage</title>
 </head>
 <body>
     <header>
@@ -16,21 +16,21 @@
                 <a href="index.html"> <img src="images/travellogo.jpg" id="logo"></a>
                     <input type="checkbox" id="hamburgermeny">
                     <div class="fasfabars"><label for="hamburgermeny"><i class="fas fa-bars"></i></label></div>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                    <li><a href="ListOfBlogs.html">Blogs</a></li>
-                </ul>
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="ListOfBlogs.html">Blogs</a></li>
+                    </ul>
             </nav>
         </div>
     </header>
     <main>
 
-        <h2 class="loj">Recent Journeys</h2>
+        <h2 class="loj">List of Journeys</h2>
             <div class="container">
-            <button class="arrow-right" onclick="next()"></button>
-            <button class="arrow-left" onclick="prev()"></button>
+                <span>&#139</span>
+                <span>&#155</span>
 
 
             </div>
@@ -45,6 +45,18 @@
         </div>
     </div>
     </main>
+    <footer>
+        
+        <ul class="footer-nav">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="ListOfBlogs.html">Blogs</a></li>
+        </ul>
+
+    </footer>
     <script src="js/main.js" defer></script>
+    <script src="js/indexMain.js" defer></script>
+    <script src="js/caroCardMain.js" defer></script>
 </body>
 </html>

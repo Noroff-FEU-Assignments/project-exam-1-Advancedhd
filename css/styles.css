@@ -10,8 +10,6 @@
   width: 50%;
 }
 
-
-
 .nav-links,
 #hamburgermeny {
   display: none;
@@ -61,6 +59,32 @@
   border-bottom: 5px solid rgb(0, 189, 173);
 }
 
+footer {
+  background-color: black;
+  height: 250px;
+  margin-top: 10%;
+}
+
+.footer-nav {
+  padding-top: 5%;
+  font-size: 115%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer-nav li {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  margin-top: 4%;
+  width: 100%;
+  background-color: black;
+}
+
+.footer-nav li a {
+  color: white;
+}
+
 .contactfeedback {
   background-color: rgb(0, 0, 0);
   color: white;
@@ -71,7 +95,7 @@
 }
 
 .checkform {
-  padding-left: 18%;
+  padding-left: 25%;
 }
 
 .contactfeedback div {
@@ -107,7 +131,7 @@
 }
 
 button.feedbacksend {
-  left: 10%;
+  left: 9%;
   bottom: 0;
   display: block;
   position: relative;
@@ -136,13 +160,33 @@ p {
 
 /*All Journey's*/
 
-.container {
+/*Top Destinations*/
+
+.tdcontainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 6px;
-  grid-row-gap: 0px;
+  grid-row-gap: 6px;
+  margin-bottom: 50px;
 }
+
+.tdcontainer div h3,
+.container div h3,
+.pjcontainer div h3 {
+  text-align: center;
+  padding-bottom: 5%;
+  font-size: 20px;
+  color: black;
+}
+
+.td,
+.pj,
+.loj {
+  margin-top: 5%;
+  text-align: center;
+}
+
 .travelcard1 {
   grid-column-start: 1;
   grid-column-end: 1;
@@ -157,50 +201,14 @@ p {
   grid-row-end: 1;
 }
 
-/*Top Destinations*/
-
-.tdcontainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-column-gap: 6px;
-  grid-row-gap: 6px;
-}
-
-.tdcontainer div h3,
-.container div h3,
-.pjcontainer div h3 {
-  text-align: center;
-  padding-bottom: 5%;
-}
-
-.td,
-.pj,
-.loj {
-  margin-top: 5%;
-  text-align: center;
-}
-
 .travelcard3 {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-
-.travelcard4 {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-.travelcard5 {
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 2;
   grid-row-end: 2;
 }
-.travelcard6 {
+
+.travelcard4 {
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 2;
@@ -208,14 +216,14 @@ p {
 }
 
 .arrow-right {
-  margin-left: 90%;
+  margin-left: 86%;
   margin-top: 23%;
   position: absolute;
   width: 0;
   height: 0;
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
-  transition: box-shadow .2s;
+  transition: box-shadow 0.2s;
   border-left: 50px solid turquoise;
 }
 
@@ -227,18 +235,17 @@ p {
   height: 0;
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
-  transition: box-shadow .2s;
+  transition: box-shadow 0.2s;
   border-right: 50px solid turquoise;
 }
 
-
 .arrow-right:hover {
   box-shadow: 0 0 11px rgba(0, 0, 0, 0.527);
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .arrow-left:hover {
-  box-shadow: 0 0 11px rgba(0, 0, 0, 0.527); 
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.527);
   cursor: pointer;
 }
 
@@ -250,11 +257,24 @@ p {
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 6px;
   grid-row-gap: 6px;
+  margin-bottom: 50px;
+}
+.travelcard5 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.travelcard6 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
 }
 
 .travelcard7 {
-  grid-column-start: 1;
-  grid-column-end: 1;
+  grid-column-start: 2;
+  grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 1;
 }
@@ -262,32 +282,32 @@ p {
 .travelcard8 {
   grid-column-start: 2;
   grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
 }
 .travelcard9 {
   grid-column-start: 1;
   grid-column-end: 1;
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
 }
 .travelcard10 {
   grid-column-start: 2;
   grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
 }
 .travelcard11 {
   grid-column-start: 1;
   grid-column-end: 1;
-  grid-row-start: 3;
-  grid-row-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
 }
 .travelcard12 {
   grid-column-start: 2;
   grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
 }
 
 .travelcard1,
@@ -304,36 +324,83 @@ p {
 .travelcard12 {
   margin-top: 10%;
   margin-bottom: 10%;
-  transition: box-shadow .2s;
-  border-radius:10px;
+  transition: box-shadow 0.2s;
+  border-radius: 10px;
   border: 1px solid #ccc;
   background: #fff;
   float: left;
+  width: 100%;
 }
 
-.travelcard1:hover ,
-.travelcard2:hover ,
-.travelcard3:hover ,
-.travelcard4:hover ,
-.travelcard5:hover ,
-.travelcard6:hover ,
-.travelcard7:hover ,
-.travelcard8:hover ,
-.travelcard9:hover ,
-.travelcard10:hover ,
-.travelcard11:hover ,
+.travelcard1:hover,
+.travelcard2:hover,
+.travelcard3:hover,
+.travelcard4:hover,
+.travelcard5:hover,
+.travelcard6:hover,
+.travelcard7:hover,
+.travelcard8:hover,
+.travelcard9:hover,
+.travelcard10:hover,
+.travelcard11:hover,
 .travelcard12:hover {
-  box-shadow: 0 0 11px rgba(0, 0, 0, 0.527); 
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.527);
 }
-
 
 .tdcontainer div img,
-.container div img,
 .pjcontainer div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.container div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.container {
+  height: 10%;
+  padding-top: 5%;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+}
+
+.container div {
+  min-width: 175px;
+  height: 150px;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+span {
+  /* margin-top: 25%;
+  position: absolute;
+  font-size: 60px;
+  font-weight: bold;
+  color: purple;
+  cursor: pointer;
+  left: 0.5%;
+  z-index: 1; */
+  display: none;
+}
+.container::-webkit-scrollbar {
+  visibility: show;
+}
+
+span:nth-of-type(2) {
+  left: 95%;
+  text-align: right;
+}
+
+main {
+  overflow: hidden;
+  font-family: lato, sans-serif;
 }
 
 main h1 {
@@ -377,38 +444,44 @@ main h2 {
 /*resolution 1100-1900px*/
 
 @media only screen and (min-width: 1100px) and (max-width: 2600px) {
-  .arrow-right {
-    margin-left: 71%;
-    margin-top: 15%;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
-    transition: box-shadow .2s;
-    border-left: 60px solid rgb(40, 202, 207);
+  span {
+    margin-top: 7%;
   }
 
-  .arrow-left {
-    margin-left: -4%;
-    margin-top: 15%;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
-    border-right: 60px solid rgb(40, 202, 207);
-    transition: box-shadow .2s;
-}
-
-  .arrow-right:hover {
-    box-shadow: 0 0 11px rgba(0, 0, 0, 0.527);
-    cursor: pointer; 
+  footer {
+    height: 350px;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 
-  .arrow-left:hover {
-    box-shadow: 0 0 11px rgba(0, 0, 0, 0.527); 
-    cursor: pointer;
+  .footer-nav {
+    padding-top: 1%;
+    font-size: 115%;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .footer-nav li {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 2%;
+    width: 100%;
+    background-color: black;
+  }
+
+  .footer-nav li a {
+    color: white;
+  }
+
+  .container div {
+    min-width: 490px;
+    height: 250px;
+    padding-top: 5px;
+    border-radius: 10px;
+    margin-left: 30px;
+    color: black;
+    margin-bottom: 60px;
   }
 
   .feedback {
@@ -424,9 +497,23 @@ main h2 {
     margin: auto;
   }
 
+  .feedbackcontent {
+    margin-left: 10%;
+  }
+
+  button.feedbacksend {
+    margin-left: 10%;
+  }
+
   .feedbackcontent label {
     float: left;
+    justify-content: center;
   }
+
+  .checkform div input {
+    padding-left: 20px;
+  }
+
   .feedbacktext {
     text-align: center !important;
   }
@@ -502,36 +589,51 @@ main h2 {
     grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 6px;
     grid-row-gap: 6px;
+    margin-bottom: 50px;
   }
 
   .td,
   .pj,
   .loj {
-    margin-top: 5%;
+    margin-top: 15%;
   }
 
-  .travelcard3 {
+  .travelcard1 {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
   }
 
-  .travelcard4 {
+  .travelcard2 {
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
   }
-  .travelcard5 {
+
+  .travelcard3 {
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 1;
   }
-  .travelcard6 {
+
+  .travelcard4 {
     grid-column-start: 4;
     grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .travelcard5 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .travelcard6 {
+    grid-column-start: 2;
+    grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
   }
@@ -541,51 +643,55 @@ main h2 {
   .pjcontainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 6px;
     grid-row-gap: 6px;
+    margin-bottom: 50px;
   }
 
   .travelcard7 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-  }
-
-  .travelcard8 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-  }
-  .travelcard9 {
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 1;
   }
-  .travelcard10 {
+
+  .travelcard8 {
     grid-column-start: 4;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1;
   }
-  .travelcard11 {
+  .travelcard9 {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 2;
   }
-  .travelcard12 {
+  .travelcard10 {
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 2;
   }
+  .travelcard11 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .travelcard12 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
 
-  .checkform {
-    margin-left: 15%;
+  .NameField,
+  .EmailField,
+  .SubjectField,
+  .messagefield {
+    margin-right: 70% !important;
   }
 
   button.feedbacksend {

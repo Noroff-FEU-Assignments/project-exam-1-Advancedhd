@@ -34,9 +34,7 @@ getData().then(data => {
             let format = `
             <h1>${title}</h1>
             ${content}
-    `
-
-
+            `
             aboutmain.innerHTML += format
         })
      
